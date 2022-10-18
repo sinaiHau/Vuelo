@@ -11,9 +11,9 @@ import lombok.*;
 
 @Entity @Getter @Setter
 public class Vuelo {
-   @Id
-      @Column(length = 12)@Required
-      String origen;
+    @Id
+    @Column(length = 12)@Required
+    String origen;
    
     @Column(length = 12)@Required
       String destino;
@@ -24,5 +24,10 @@ public class Vuelo {
     @Required
    	@DefaultValueCalculator(CurrentLocalDateCalculator.class)
    	LocalDate fecha;
+    
+    //mensaje para confirmar de que se estan subiendo mis cambios
+    
+    
 	
+    
 }

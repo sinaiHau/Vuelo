@@ -11,4 +11,6 @@ public class Pasajero {
 	@Id
 	@Column(length =16)
 	String nombre;
+	
+	
 }
